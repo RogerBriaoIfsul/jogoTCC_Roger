@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GAÚ-CHY-OH</string>
+    <string name="action_settings">Settings</string>
+    <string name="mapa_fases">Selecione a Fase:</string>
+    <string name="mapa_imagem">Mapa</string>
+    <string name="passar">Passar o turno</string>
+
+
+    //Historias
+    <string name="historia1">1835 – A 20 de setembro, eclode a Revolução Farroupilha com a tomada de Porto Alegre pelas tropas lideradas por Onofre Pires e José Gomes Jardim.</string>
+</resources>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/brasao">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:text="Vida:"
+            android:textSize="25sp"
+            android:editable="false"
+            android:drawableRight="@drawable/vida_i"
+            android:id="@+id/edtxtVidaAi"
+            android:inputType="none" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:text="Pila:"
+                android:textSize="25sp"
+                android:editable="false"
+                android:drawableRight="@drawable/pila_pequeno"
+                android:id="@+id/edtxtPilaAi"
+                android:inputType="none" />
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="750dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="315dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/metadeverso"
+                    android:id="@+id/verso1" />
+                <Space
+                    android:layout_height="5dp"
+                    android:layout_width="50dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/metadeverso"
+                    android:id="@+id/verso2" />
+                <Space
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/metadeverso"
+                    android:id="@+id/verso3" />
+                <Space
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/metadeverso"
+                    android:id="@+id/verso4" />
+                <Space
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/metadeverso"
+                    android:id="@+id/verso5" />
+            </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4">
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="240dp"
+                android:src="@drawable/campo"
+                android:id="@+id/campo01" />
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/campo"
+                android:id="@+id/campo02" />
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/campo"
+                android:id="@+id/campo03" />
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/campo"
+                android:id="@+id/campo04" />
+
+        </GridLayout>
+        <Space
+            android:layout_height="10dp"
+            android:layout_width="match_parent"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="240dp"
+            android:src="@drawable/campo"
+            android:id="@+id/campo1" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/campo"
+            android:id="@+id/campo2" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/campo"
+            android:id="@+id/campo3" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/campo"
+            android:id="@+id/campo4" />
+    </GridLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/verso"
+            android:id="@+id/imageView" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="right|center_horizontal|center_vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/passar"
+            android:layout_gravity="right|center_horizontal|center_vertical"
+            android:onClick="Passar"
+            android:id="@+id/btnPassar" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vida:"
+                android:ems="7"
+                android:textSize="25sp"
+                android:id="@+id/edtxtVida"
+                android:numeric="decimal"
+                android:drawableRight="@drawable/vida_f"
+                android:editable="false"
+                android:inputType="none" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:text="Pila:"
+                    android:textSize="25sp"
+                    android:numeric="decimal"
+                    android:drawableRight="@drawable/pila_pequeno"
+                    android:id="@+id/edtxtPila"
+                    android:editable="false"
+                    android:enabled="true"
+                    android:inputType="none" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="120dp">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:src="@drawable/verso"
+                android:id="@+id/imageView2" />
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:src="@drawable/verso"
+                android:id="@+id/imageView3" />
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:src="@drawable/verso"
+                android:id="@+id/imageView4" />
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:src="@drawable/verso"
+                android:id="@+id/imageView5" />
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:src="@drawable/verso"
+                android:id="@+id/imageView6" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

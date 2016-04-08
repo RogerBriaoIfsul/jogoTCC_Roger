@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mapa_fases"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="10dp" />
+
+        <ListView
+            android:id="@+id/lvdatas"
+            android:layout_width="347dp"
+            android:layout_height="595dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/imvImagem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/mapa_imagem"
+            android:src="@drawable/mapa"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/btn_ir"
+            android:onClick="verHistoria"
+            />
+    </FrameLayout>
+
+</LinearLayout>
